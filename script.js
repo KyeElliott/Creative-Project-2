@@ -15,6 +15,7 @@ window.onload = function createArray()
 
     .then(function(json)
     {
+      console.log(json.page[1]);
       for (let i = 0; i < json.data.length; i++)
       {
         pokemonArray[i] = json.data[i];
@@ -25,7 +26,7 @@ window.onload = function createArray()
 
 searchInput.addEventListener("keyup", function()
 {
-  const input = searchInput.value;
+  const input = searchInput.value.toLowerCase();
   suggestionPanel.innerHTML = '';
   document.getElementById("footer").style.position = "absolute";
 
