@@ -1,0 +1,154 @@
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face
+{
+  font-family: PokeFont;
+  src: url("Pokemon Solid.ttf");
+}
+
+@font-face
+{
+  font-family: PokePixel;
+  src: url("pokemon_pixel_font.woff");
+}
+
+@media only screen and (max-width: 426px)
+{
+  .title h1
+  {
+    font-size: 50px;
+  }
+
+  #footer
+  {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 426px) and (max-width: 769px)
+{
+  .title h1
+  {
+    font-size: 70px;
+  }
+
+  #footer
+  {
+    display: none;
+  }
+}
+
+body
+{
+  background-color: #bd081c;
+}
+
+.title
+{
+  display: block;
+  justify-content: center;
+  font-family: pokeFont;
+  font-size: 45px;
+  color: white;
+  margin-bottom: 50px;
+}
+
+.title p
+{
+  font-family: pokePixel;
+  font-size: 25px;
+}
+
+.container
+{
+  display: block;
+  width: 60%;
+  margin: 100px auto;
+  background: white;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.container input
+{
+  width: 100%;
+  outline: none;
+  border: 0;
+  font-family: PokePixel;
+  background: transparent;
+  font-size: 30px;
+  padding: 10px;
+}
+
+#suggestions
+{
+  font-family: PokePixel;
+  font-size: 25px;
+}
+
+#suggestions > div
+{
+  padding: 15px;
+  font-size 20px;
+  border-top: 1px solid black;
+}
+
+#suggestions > div:hover
+{
+  background-color: black;
+  color: white;
+}
+
+#pokemonResults
+{
+  margin-top: 75px;
+}
+
+#cardPicture
+{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+#cardInfo
+{
+  font-family: PokePixel;
+  display: block;
+  font-size: 30px;
+  color: white;
+}
+
+#cardInfo p
+{
+  margin-bottom: 7px;
+}
+
+#cardInfo a
+{
+  font-size: 35px;
+  margin-top: 4px;
+  margin-bottom: 7px;
+  color: white;
+  text-decoration: none;
+  border: 2px solid white;
+  padding: 5px;
+}
+
+#cardInfo a:hover
+{
+  color: gray;
+  border-color: gray;
+}
+
+#footer
+{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
